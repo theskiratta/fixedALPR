@@ -25,12 +25,14 @@ AddEventHandler('plateChecker:checkVehicle', function(plate, camera, heading, sp
     local isBoloPlate = false
     local isSpeeding = false
     local truespeed = 0
+
     -- Calculates true speed of vehicle
     if Config.UseMPH then
         truespeed = speed * 2.236936
     else
         truespeed = speed * 3.6
     end
+    
     -- If speed check is enabled, checks whether speed was over limit.
     if Config.CheckSpeed then
         if truespeed > camera.limit then

@@ -51,6 +51,7 @@ function CreateDiscordLogSpeed(source, camera, speed, plate, location, heading)
             ["url"] = WHConfig.image,
         },
     }
+    PerformHttpRequest(webhook, function(err, text, headers) end, 'POST', json.encode({ username = WHConfig.name, embeds = embedsetup }), { ['Content-Type'] = 'application/json' })
 end
 
 function CreateDiscordLogBOLO(source, camera, speed, plate, location, heading)
@@ -106,4 +107,5 @@ function CreateDiscordLogBOLO(source, camera, speed, plate, location, heading)
             ["url"] = WHConfig.image,
         },
     }
+    PerformHttpRequest(webhook, function(err, text, headers) end, 'POST', json.encode({ username = WHConfig.name, embeds = embedsetup }), { ['Content-Type'] = 'application/json' })
 end
