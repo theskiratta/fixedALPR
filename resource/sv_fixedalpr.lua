@@ -32,7 +32,7 @@ AddEventHandler('plateChecker:checkVehicle', function(plate, camera, heading, sp
     else
         truespeed = speed * 3.6
     end
-    
+
     -- If speed check is enabled, checks whether speed was over limit.
     if Config.CheckSpeed then
         if truespeed > camera.limit then
@@ -60,7 +60,7 @@ AddEventHandler('plateChecker:checkVehicle', function(plate, camera, heading, sp
 
     -- Takes action based on the results of above checks:
     if isBoloPlate then -- Plate has BOLO
-        CameraActivatedBOLO(camera, truespeed, plate, v3location)
+        CameraActivatedBOLO(camera, truespeed, plate, v3location, heading)
         -- Change the events upon BOLO detection above not here
     else if isSpeeding then -- Vehicle is Speeding
         CameraActivatedSpeed(camera, truespeed, plate, v3location, heading)
