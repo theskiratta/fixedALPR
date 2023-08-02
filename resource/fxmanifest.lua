@@ -3,7 +3,7 @@ games { 'gta5' }
 
 author 'TheSkirata'
 description 'A resource providing a speed camera and ALPR system'
-version '0.5'
+version '1.0'
 
 client_scripts {
     'cl_fixedalpr.lua',
