@@ -78,7 +78,7 @@ Config.Locations = {
             coords = vector3(1780.36, 1814.70, 80.46),
             heading = 347.38,
         },
-        name = "LS Freeway Northern NB Bridge"
+        name = "LS Freeway Northern NB (Bridge)"
     },
     {
         limit = 75.0,
@@ -312,7 +312,7 @@ Config.Locations = {
             coords = vector3(-1834.07, -557.73, 11.54),
             heading = 41.58,
         },
-        name = "Del Perro Fwy NW WB"
+        name = "Del Perro Fwy Beach WB"
     },
     {
         limit = 75.0,
@@ -321,7 +321,25 @@ Config.Locations = {
             coords = vector3(-1836.92, -609.08, 11.34),
             heading = 228.67,
         },
-        name = "Del Perro Fwy NW EB"
+        name = "Del Perro Fwy Beach EB"
+    },
+    {
+        limit = 75.0,
+        detectionRange = 15.0,
+        camera = {
+            coords = vector3(-137.16, -484.19, 29.29),
+            heading = 90.58,
+        },
+        name = "Del Perro Fwy Mid WB"
+    },
+    {
+        limit = 75.0,
+        detectionRange = 15.0,
+        camera = {
+            coords = vector3(-118.23, -538.66, 29.86),
+            heading = 270.38,
+        },
+        name = "Del Perro Fwy Mid EB"
     },
     -- Add more locations here as needed
 }
