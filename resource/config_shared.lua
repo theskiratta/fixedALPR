@@ -4,6 +4,8 @@ Config.PlateCheckCooldown = 5000 -- 5 seconds cooldown between plate checks (adj
 
 Config.ModelHash = "prop_cctv_pole_01a" -- Model name or hash for the camera prop (adjust as needed)
 
+Config.FlashClient = true
+
 Config.CheckSpeed = true
 Config.UseMPH = true
 

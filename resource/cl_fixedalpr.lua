@@ -82,7 +82,7 @@ end, false)
 
 RegisterNetEvent("fixedALPR:clientFlash")
 AddEventHandler("fixedALPR:clientFlash", function()
-    PlaySoundFrontend(-1, "ScreenFlash", "MissionFailedSounds", 1)
+    PlaySoundFrontend(-1, "ScreenFlash", "MissionFailedSounds", true)
     StartScreenEffect("FocusOut", 0, false)
     Wait(2000)
     StopScreenEffect("FocusOut")

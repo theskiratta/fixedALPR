@@ -13,7 +13,7 @@ function CameraActivatedSpeed(camera, speed, plate, location, heading)
     --     CreateDiscordLogSpeed(source, camera, speed, plate, location, heading)
     --     print("Initiated Discord Speed Log")
     -- end
-    if SVConfig.FlashClient then
+    if Config.FlashClient then
         TriggerClientEvent('fixedALPR:clientFlash', source)
     end
 
