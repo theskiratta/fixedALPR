@@ -325,7 +325,7 @@ Config.Locations = {
     },
     {
         limit = 75.0,
-        detectionRange = 15.0,
+        detectionRange = 25.0,
         camera = {
             coords = vector3(-137.16, -484.19, 29.29),
             heading = 90.58,
@@ -334,12 +334,30 @@ Config.Locations = {
     },
     {
         limit = 75.0,
-        detectionRange = 15.0,
+        detectionRange = 24.0,
         camera = {
             coords = vector3(-118.23, -538.66, 29.86),
             heading = 270.38,
         },
         name = "Del Perro Fwy Mid EB"
+    },
+    {
+        limit = 40.0,
+        detectionRange = 15.0,
+        camera = {
+            coords = vector3(365.32, -2284.61, 10.53),
+            heading = 359.0,
+        },
+        name = "Signal St. Bridge NB"
+    },
+    {
+        limit = 40.0,
+        detectionRange = 15.0,
+        camera = {
+            coords = vector3(341.38, -2346.81, 10.55),
+            heading = 182.21,
+        },
+        name = "Signal St. Bridge SB"
     },
     -- Add more locations here as needed
 }
