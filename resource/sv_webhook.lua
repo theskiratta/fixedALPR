@@ -97,7 +97,7 @@ function CreateDiscordLogBOLO(source, camera, speed, plate, location, heading)
                 ["inline"] = true
             },
         },
-        ["color"] = 16767002,
+        ["color"] = 16777215,
         ["title"] = "Automatic Camera Activation",
         ["description"] = "",
         ["footer"] = {
