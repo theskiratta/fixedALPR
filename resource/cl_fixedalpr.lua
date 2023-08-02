@@ -74,12 +74,6 @@ RegisterCommand("listcameras", function()
     end
 end, false)
 
-RegisterCommand("getplate", function()
-    local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
-    local plate = GetVehicleNumberPlateText(vehicle)
-    print(plate)
-end, false)
-
 RegisterNetEvent("fixedALPR:clientFlash")
 AddEventHandler("fixedALPR:clientFlash", function()
     PlaySoundFrontend(-1, "ScreenFlash", "MissionFailedSounds", true)
