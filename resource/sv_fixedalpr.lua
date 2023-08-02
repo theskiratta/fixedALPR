@@ -1,21 +1,23 @@
 function CameraActivatedBOLO(camera, speed, plate, location, heading)
-    if SVConfig.UseDiscordLogging then
-        CreateDiscordLogBOLO(source, camera, speed, plate, location, heading)
-    end
+    -- if SVConfig.UseDiscordLogging then
+    --     CreateDiscordLogBOLO(source, camera, speed, plate, location, heading)
+    --     print("Initiated Discord BOLO Log")
+    -- end
 
-    -- Add any framework logic here, i.e. event triggers
+    -- Add any framework logic here, i.e. event triggers. Default is a print statement to server console
     print(string.format("Plate: %s, Speed: %f, Heading: %f, Location: %s - ALERT: Bolo Plate Detected!", plate, speed, heading, camera.name))
 end
 
 function CameraActivatedSpeed(camera, speed, plate, location, heading)
-    if SVConfig.UseDiscordLogging then
-        CreateDiscordLogSpeed(source, camera, speed, plate, location, heading)
-    end
+    -- if SVConfig.UseDiscordLogging then
+    --     CreateDiscordLogSpeed(source, camera, speed, plate, location, heading)
+    --     print("Initiated Discord Speed Log")
+    -- end
     if SVConfig.FlashClient then
         TriggerClientEvent('fixedALPR:clientFlash', source)
     end
 
-    -- Add any framework logic here, i.e. event triggers
+    -- Add any framework logic here, i.e. event triggers. Default is a print statement to server console
     print(string.format("Plate: %s, Speed: %f, Heading: %f, Location: %s - ALERT: Speeding Vehicle Detected!", plate, speed, heading, camera.name))
 end
 

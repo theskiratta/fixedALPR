@@ -10,7 +10,6 @@ client_scripts {
 }
 
 server_scripts {
-    'config_server.lua',
     'sv_*.lua',
 }
 
